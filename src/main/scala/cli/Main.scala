@@ -32,8 +32,5 @@ object CommandLineInterface {
       }
       src.close()
     })
-
-    System.exit(0)
   }
-
 }
