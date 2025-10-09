@@ -1,0 +1,5 @@
+.metals/
+.bsp/
+target/
+project/project/
+project/target/
