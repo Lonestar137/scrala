@@ -8,7 +8,7 @@ object CommandLineInterface {
   def main(args: Array[String]): Unit = {
     if(args.length < 1) {
       println("Usage: {Keyword}")
-      return 1
+      System.exit(1)
     }
 
     val keyword = args.toSeq(0).toLowerCase.strip
@@ -33,6 +33,7 @@ object CommandLineInterface {
       src.close()
     })
 
-    return 0
+    System.exit(0)
   }
+
 }
