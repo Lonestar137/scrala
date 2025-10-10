@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+
+NOTE_DIR="/home/$USER/.cache/note-grep"
+
+mkdir -p $NOTE_DIR
+
+ranger /home/$USER/.cache/note-grep/
+

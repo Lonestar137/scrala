@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+java -jar /home/$USER/Repos/Scala/scrala/target/scala-3.7.2/scrala-assembly-0.1.0-SNAPSHOT.jar "$@" | bat --decorations never --language yaml
