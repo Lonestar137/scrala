@@ -25,9 +25,10 @@ object CommandLineInterface {
 
       for (l <- splitfile){
         if(l.toLowerCase.contains(keyword)){
-          println("|----------")
+          println("# " + f.getName)
+          println("---")
           println(l)
-          println("|----------")
+          println("---")
         }
       }
       src.close()
