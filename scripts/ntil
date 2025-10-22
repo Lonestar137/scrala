@@ -3,7 +3,12 @@
 
 NOTE_DIR="/home/$USER/.cache/note-grep"
 
-mkdir -p $NOTE_DIR
+TODAY=$(date +%d-%m-%y)
+FILE="$NOTE_DIR/$TODAY.yml"
 
-ranger /home/$USER/.cache/note-grep/
+if [ ! -s $FILE ]; then
+  echo "File does not exist, creating new file:"
+  echo '---' > $FILE
+fi
 
+$EDITOR $FILE
